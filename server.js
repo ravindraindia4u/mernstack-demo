@@ -6,7 +6,7 @@ const routes = require('./routes/api');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
-const MongoDB_URI = process.env.DATABASE_URL || "mongodb+srv://root:root@cluster0-efsgl.mongodb.net/mernapp?retryWrites=true&w=majority&ssl=true";
+const MongoDB_URI = process.env.MONGODB_URI || "mongodb+srv://root:root@cluster0-efsgl.mongodb.net/mernapp?retryWrites=true&w=majority&ssl=true";
 
 mongoose.connect(MongoDB_URI,{
     useNewUrlParser: true,
@@ -22,10 +22,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
 //step-3
-if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('client/build'));
-}
-// app.use(express.static('client/build'));
+// if(process.env.NODE_ENV === 'production'){
+//     app.use(express.static('client/build'));
+// }
+app.use(express.static('client/build'));
 
 
 //HTTP request logger
