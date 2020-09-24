@@ -20,6 +20,12 @@ mongoose.connection.on('connected',()=>{
 //Data parsing
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
+
+//step-3
+if(process.env.NODE_ENV === 'procuction'){
+    app.use(express.static('client/build'));
+}
+
 //HTTP request logger
 app.use(morgon('tiny'));  
 app.use('/api',routes);
