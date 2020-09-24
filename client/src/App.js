@@ -96,7 +96,7 @@ class App extends React.Component {
               name="body"
               placeholder="Enter your message"
               cols="30"
-              rows="15"
+              rows="10"
               value={this.state.body}
               onChange={this.handleChange}
             ></textarea>

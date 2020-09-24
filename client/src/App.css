@@ -29,6 +29,7 @@ form{
 }
 .form-input textarea{
   font-size: large;
+  resize: vertical;
 }
 button{
   background-color: #007bff;
