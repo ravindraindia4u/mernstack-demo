@@ -1,0 +1,49 @@
+:root{
+  background-color: #F4F8F9;
+}
+.app{
+  padding: 10px;
+  margin: 0 15%;
+}
+
+h2{
+  color: blue;
+  text-align: center;
+}
+
+.form-input{
+  margin:10px 0px;
+}
+form{
+  margin-right: 1.7rem;
+}
+
+.form-input input, .form-input textarea {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25;
+  border: 1px solid lightgray;
+  padding: .375rem .75rem;
+  outline: none;
+}
+.form-input textarea{
+  font-size: large;
+}
+button{
+  background-color: #007bff;
+  color: #fff;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  cursor: pointer;
+  outline: none;
+}
+.blog-post_display{
+  border: 1px solid lightgray;
+  margin: 5px 0px;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
