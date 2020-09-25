@@ -80,7 +80,7 @@ class App extends React.Component {
     //JSX
     return (
       <div className="app">
-        <h2>Welcome to my App</h2>
+        <h2>Welcome To MernStack Web App</h2>
         <form onSubmit={this.submit}className="form">
           <div className="form-input">
             <input
