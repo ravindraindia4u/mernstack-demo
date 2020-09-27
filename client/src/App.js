@@ -86,7 +86,8 @@ class App extends React.Component {
             <input
               type="text"
               placeholder="Enter your title"
-              name="title"
+              name="title" 
+              required="required"
               value={this.state.title}
               onChange={this.handleChange}
             />
@@ -95,6 +96,7 @@ class App extends React.Component {
             <textarea
               name="body"
               placeholder="Enter your message"
+              aria-required="required"
               cols="30"
               rows="10"
               value={this.state.body}
