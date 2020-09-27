@@ -96,7 +96,7 @@ class App extends React.Component {
             <textarea
               name="body"
               placeholder="Enter your message"
-              aria-required="required"
+              required="required"
               cols="30"
               rows="10"
               value={this.state.body}
